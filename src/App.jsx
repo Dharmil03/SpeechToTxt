@@ -7,6 +7,7 @@ import 'regenerator-runtime/runtime'
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
+import {toast } from 'react-hot-toast';
 
 function App() {
 
@@ -26,9 +27,10 @@ function App() {
     element.download = 'transcript.txt';
     document.body.appendChild(element); // Required for this to work in FireFox
     element.click();
+    toast.success('file has been downloaded')
   };
   return (
-    <>
+    <div className="mains">
       <h1 className="heading">Speech to Text </h1>
       <div className="input_box">
         <p className="input_box--text">{transcript}</p>
@@ -47,7 +49,7 @@ function App() {
           <MdLockReset size="20px" />
         </button>
       </div>
-    </>
+    </div>
   );
 }
 
