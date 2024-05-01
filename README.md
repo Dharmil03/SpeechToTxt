@@ -9,13 +9,10 @@ SpeechTXT is a responsive speech-to-text converter application developed using R
 - **Download Transcripts:** Easily download the converted text transcripts as TXT files.
 - **Reset Anytime:** Start fresh by resetting the transcript whenever needed.
 
-## Demo
-
-Check out the live demo [here](https://speech-txt-neon.vercel.app/).
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/speech-txt.git
+git clone 
